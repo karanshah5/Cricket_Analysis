@@ -18,7 +18,11 @@ This project involves web scraping ICC T20 World Cup 2022 data from various sour
 The data collected for this project includes:
 
 ### 1. Match Results
-- ICC T20 World Cup 2022 match results, including match outcomes, scores, venues, and dates, are scraped and stored in a structured format.
+<p align="center">
+  <img src="https://github.com/karanshah5/Cricket_Analysis/blob/main/csv_data_snippets/match_results.png", title="Hello"/>
+</p>
+
+- ICC T20 World Cup 2022 match results, including  participating teams, match outcomes, margins of victory, match venues, match dates, and unique match IDs, are scraped and stored in a structured format.
 
 The scraping process for match results involves using the following libraries and modules:
 
@@ -44,6 +48,11 @@ The code for extracting scorecard links uses the following libraries and imports
 - `from urllib.parse import urljoin`: This import is used to join relative URLs with the base URL to create absolute URLs for the scorecard links. It ensures that the links are complete and can be used to access the scorecard pages.
 
 ### 3. `batting_data` Function
+
+<p align="center">
+  <img src="https://github.com/karanshah5/Cricket_Analysis/blob/main/csv_data_snippets/batting.png", title="Hello"/>
+</p>
+
 The `batting_data` function is responsible for extracting batting data from a given URL, which typically points to a specific match's scorecard. Here's an overview of how it works:
 
 1. It makes an HTTP request to the provided URL and fetches the HTML content of the page.
@@ -76,6 +85,11 @@ The `batting_data` function is responsible for extracting batting data from a gi
 This process ensures that the batting data is structured and enriched with relevant information, making it suitable for further analysis and team selection.
 
 ### 4. `extract_bowling_data` Function
+
+<p align="center">
+  <img src="https://github.com/karanshah5/Cricket_Analysis/blob/main/csv_data_snippets/bowling.png", title="Hello"/>
+</p>
+
 The `extract_bowling_data` function is responsible for extracting bowling data from a given URL, which typically points to a specific match's scorecard. Here's an overview of how it works:
 
 1. It makes an HTTP request to the provided URL and fetches the HTML content of the page.
@@ -105,6 +119,11 @@ The `extract_bowling_data` function is responsible for extracting bowling data f
 This process ensures that the bowling data is structured and enriched with relevant information, making it suitable for further analysis and team selection.
 
 ### 5. Player Details Extraction
+
+<p align="center">
+  <img src="https://github.com/karanshah5/Cricket_Analysis/blob/main/csv_data_snippets/players.png", title="Hello"/>
+</p>
+
 The extraction of player details is a crucial step in the ICC T20 World Cup 2022 Analysis project, as it provides comprehensive information about each player participating in the tournament. This information includes player names, team affiliations, batting styles, bowling styles, playing roles, descriptions, and even images. Here's an overview of how player details are extracted:
 
 ### Retrieving HTML Pages
